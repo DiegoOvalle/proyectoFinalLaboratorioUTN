@@ -3,14 +3,14 @@ Algoritmo servicioMedico
 FinAlgoritmo
 
 Funcion menuPrincipal()
-	Definir opcion Como Entero
+	Definir opc Como Entero
 	Repetir
-        Escribir "Menú principal:"
+        Escribir "MenÃº principal:"
         Escribir "1. Ingreso"
         Escribir "2. Facturacion"
         Escribir "3. Salir"
         Escribir ""
-        Leer opcion
+        Leer opc
 		
         Segun opcion Hacer
             1: Borrar Pantalla //este comando borra deja la pantalla limpia
@@ -20,22 +20,21 @@ Funcion menuPrincipal()
             3: Borrar Pantalla
 				salida()				
             -1: // misma funcion que opcion 3
-            De Otro Modo: Escribir "Opción inválida."
+            De Otro Modo: Escribir "OpciÃ³n invÃ¡lida."
         Fin Segun
-    Hasta Que opcion = 3 O opcion = -1
+    Hasta Que opc = 3 O opc = -1
 FinFuncion
 
 Funcion seleccionPaciente()
 	Repetir
-        Escribir "Menú Ingreso de paciente"
+        Escribir "MenÃº Ingreso de paciente"
 		Escribir "Seleccione el tipo:"
 		Escribir ""
         Escribir "1. Particular"
         Escribir "2. Obra Social"
-        Escribir "3. Empresa"
-		Escribir "4. Volver al menú principal"
+		Escribir "3. Volver al menÃº principal"
         Escribir ""
-        Leer opcion
+        Leer opc
 		
         Segun opcion Hacer
             1: // Funcion para ingreso por particular
@@ -45,11 +44,11 @@ Funcion seleccionPaciente()
 				menuPrincipal()
             De Otro Modo:
 				Borrar Pantalla
-				Escribir "Opción inválida. Redirigiendo al menu"
+				Escribir "OpciÃ³n invÃ¡lida. Redirigiendo al menu"
 				Esperar 1 Segundos
 				Borrar Pantalla
         Fin Segun
-    Hasta Que opcion = -1
+    Hasta Que opc = -1
 FinFuncion
 
 Funcion ingresoDatos()
@@ -58,14 +57,14 @@ FinFuncion
 
 Funcion tipoFacturacion()
 	Repetir
-        Escribir "Menú Facturacion"
+        Escribir "MenÃº Facturacion"
 		Escribir "Seleccione el tipo:"
 		Escribir ""
         Escribir "1. Cierre de caja"
         Escribir "2. Discriminada"
-		Escribir "3. Volver al menú principal"
+		Escribir "3. Volver al menÃº principal"
         Escribir ""
-        Leer opcion
+        Leer opc
 		
         Segun opcion Hacer
             1: // funcion para cierre de caja
@@ -74,7 +73,7 @@ Funcion tipoFacturacion()
 				menuPrincipal()
             De Otro Modo:
 				Borrar Pantalla
-				Escribir "Opción inválida. Redirigiendo al menu facturacion"
+				Escribir "OpciÃ³n invÃ¡lida. Redirigiendo al menu facturacion"
 				Esperar 1 Segundos
 				Borrar Pantalla
         Fin Segun
