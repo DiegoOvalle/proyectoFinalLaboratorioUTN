@@ -5,7 +5,7 @@ FinAlgoritmo
 Funcion menuPrincipal()
 	Definir opcion Como Entero
 	Repetir
-        Escribir "Menú principal:"
+        Escribir "MenÃº principal:"
         Escribir "1. Ingreso"
         Escribir "2. Facturacion"
         Escribir "3. Salir"
@@ -20,20 +20,19 @@ Funcion menuPrincipal()
             3: Borrar Pantalla
 				salida()				
             -1: // misma funcion que opcion 3
-            De Otro Modo: Escribir "Opción inválida."
+            De Otro Modo: Escribir "OpciÃ³n invÃ¡lida."
         Fin Segun
     Hasta Que opcion = 3 O opcion = -1
 FinFuncion
 
 Funcion seleccionPaciente()
 	Repetir
-        Escribir "Menú Ingreso de paciente"
+        Escribir "MenÃº Ingreso de paciente"
 		Escribir "Seleccione el tipo:"
 		Escribir ""
         Escribir "1. Particular"
         Escribir "2. Obra Social"
-        Escribir "3. Empresa"
-		Escribir "4. Volver al menú principal"
+		Escribir "3. Volver al menÃº principal"
         Escribir ""
         Leer opcion
 		
@@ -45,7 +44,7 @@ Funcion seleccionPaciente()
 				menuPrincipal()
             De Otro Modo:
 				Borrar Pantalla
-				Escribir "Opción inválida. Redirigiendo al menu"
+				Escribir "OpciÃ³n invÃ¡lida. Redirigiendo al menu"
 				Esperar 1 Segundos
 				Borrar Pantalla
         Fin Segun
@@ -58,12 +57,12 @@ FinFuncion
 
 Funcion tipoFacturacion()
 	Repetir
-        Escribir "Menú Facturacion"
+        Escribir "MenÃº Facturacion"
 		Escribir "Seleccione el tipo:"
 		Escribir ""
         Escribir "1. Cierre de caja"
         Escribir "2. Discriminada"
-		Escribir "3. Volver al menú principal"
+		Escribir "3. Volver al menÃº principal"
         Escribir ""
         Leer opcion
 		
@@ -74,7 +73,7 @@ Funcion tipoFacturacion()
 				menuPrincipal()
             De Otro Modo:
 				Borrar Pantalla
-				Escribir "Opción inválida. Redirigiendo al menu facturacion"
+				Escribir "OpciÃ³n invÃ¡lida. Redirigiendo al menu facturacion"
 				Esperar 1 Segundos
 				Borrar Pantalla
         Fin Segun
